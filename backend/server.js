@@ -160,6 +160,9 @@ app.use((err, req, res, next) => {
 // ============================================
 // START SERVER
 // ============================================
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`.yellow.bold);
-});
+// app.listen(PORT, () => {
+//   console.log(`🚀 Server running on port ${PORT}`.yellow.bold);
+// });
+// NEW WAY FOR VERCEL
+// Remove app.listen() and instead export the app
+module.exports = app;
